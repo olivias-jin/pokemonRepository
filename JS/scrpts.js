@@ -20,7 +20,6 @@ pokemonRepository.add({name:"Pikachu",height:4,types:'electric'});
 console.log(pokemonRepository.getAll());
 
 
-pokemonList.forEach(function(user){
-    console.log(user.name + ' type is ' + user.types);
-    
-});
+// pokemonList.forEach(function(user){
+//     console.log(user.name + ' type is ' + user.types);
+// });
