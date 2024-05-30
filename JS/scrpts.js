@@ -16,5 +16,5 @@ let pokemonRepository = (function(){
 })();
 
 console.log(pokemonRepository.getAll()); //[]
-pokemonRepository.add({name:'Pikachu'});
+pokemonRepository.add({name:"Pikachu"});
 console.log(pokemonRepository.getAll());//[{name:'Pikachu'}]
