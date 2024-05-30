@@ -18,3 +18,9 @@ let pokemonRepository = (function(){
 console.log(pokemonRepository.getAll());
 pokemonRepository.add({name:"Pikachu",height:4,types:'electric'});
 console.log(pokemonRepository.getAll());
+
+
+pokemonList.array.forEach(element => {
+    console.log(user.name + ' type is ' + user.types);
+    
+});
