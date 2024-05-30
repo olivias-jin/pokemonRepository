@@ -15,6 +15,6 @@ let pokemonRepository = (function(){
             };
 })();
 
-console.log(pokemonRepository.getAll()); //[]
+console.log(pokemonRepository.getAll());
 pokemonRepository.add({name:"Pikachu",height:4,types:'electric'});
-console.log(pokemonRepository.getAll());//[{name:'Pikachu'}]
+console.log(pokemonRepository.getAll());
