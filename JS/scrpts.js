@@ -1,6 +1,6 @@
 // IIFE
 
-let pokemonRepository = (function(){
+var pokemonRepository = (function(){
     let pokemonList = [
     {name :"Bulbasaur", height:7, types: ['grass','posion']},
     {name :"Charmander", height:6, types: 'fire' },
