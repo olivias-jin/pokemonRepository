@@ -24,7 +24,7 @@ pokemonRepository.getAll.forEach(function(pokemon){
     let listpokemon = document.createElement("li");
     let button = document.createElement("button");
     button.innerText = "placeholder";
-    button.classList.add("button=class")
+    button.classList.add("button-class")
 
 });
 
