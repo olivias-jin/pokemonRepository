@@ -14,13 +14,13 @@ let pokemonRepository = (function(){
         "height" in pokemon &&
         "types" in pokemon
     ){
-        repository.push(pokemon);
+        pokemonList.push(pokemon);
     }else {
         console.log("pokemon is not corret");
     }
    }
    function getAll(){
-    return repository;
+    return pokemonList;
    }
    function addListItem(pokemon){    
 let pokemonList = document.querySelector(".pokemon-list");
