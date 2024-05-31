@@ -1,5 +1,5 @@
 .button-class {
-    background-color: green; 
+    background-color: rgb(11, 196, 11); 
     border: none;
     color: white;
     padding: 16px 32px;
@@ -13,5 +13,5 @@
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid green;
+    border: 2px solid rgb(11, 196, 11);
 }
