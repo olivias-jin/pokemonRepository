@@ -65,14 +65,16 @@ let pokemonList = document.querySelector(".pokemon-list");
     };
 })();
 
-console.log(pokemonRepository.getAll());
 pokemonRepository.add({name:"Pikachu",height:0.4,types:["electric"]});
+
 console.log(pokemonRepository.getAll());
 
+pokemonRepository.loadList().then(function() {
 pokemonRepository.getAll().forEach(function(pokemon){
-
     pokemonRepository.addListItem(pokemon);
 });
+});
+
 
 // pokemonList.forEach(function(user){
 //     console.log(user.name + ' type is ' + user.types);
