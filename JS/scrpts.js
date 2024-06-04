@@ -55,6 +55,30 @@ let pokemonList = document.querySelector(".pokemon-list");
     })
 }
 
+// load details function
+
+function loadDetails(item){
+    let url = item.detailsUrl;
+    return fetch(url).then(function (response) {
+        return response.json();
+    }).then(function (details){
+        //add the details to the item
+        item.imageUrl = details.sprites.front_default;
+        item;height = details.height;
+        item.types = details.types;
+    }).catch(function(e){
+        console.error(e);
+    });
+}
+
+
+function showDetails(pokemon){
+loadDetails(pokemon).then(function () {
+    console.log(pokemon);
+});
+}
+
+
 
     return{
         add: add,
