@@ -1,10 +1,8 @@
 // IIFE
 
 let pokemonRepository = (function(){
-    let pokemonList = [
-    {name :"Bulbasaur", height:0.7, types: ["grass","posion"]},
-    {name :"Charmander", height:0.6, types: ["fire"] },
-    {name :"Squirtle", height:0.5, types: ["water"] }];
+    let pokemonList = [];
+    let apiurl = 'https://pokeapi.co/api/v2/pokemon/';
     
     
    function add(pokemon) {
@@ -38,6 +36,26 @@ let pokemonList = document.querySelector(".pokemon-list");
    pokemonList.appendChild(listpokemon);
 
    }
+
+   //promise function
+   
+   function loadList() {
+    return fetch(apiUrl).then(function(response){
+        return response.json();
+    }).then(function(json){
+        json.results.forEach(function(item){
+            let pokemon = {
+                name: item.name,
+                detailsURL: item.url
+            };
+            add(pokemon);
+        });
+    }).catch(function(e){
+        console.error(e);
+    })
+}
+
+
     return{
         add: add,
         getAll: getAll,
