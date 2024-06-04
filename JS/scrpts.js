@@ -37,8 +37,9 @@ let pokemonList = document.querySelector(".pokemon-list");
 
    }
 
-   //promise function
-   
+
+
+//    promise function
    function loadList() {
     return fetch(apiUrl).then(function(response){
         return response.json();
@@ -59,7 +60,9 @@ let pokemonList = document.querySelector(".pokemon-list");
     return{
         add: add,
         getAll: getAll,
-    addListItem: addListItem,   };
+        addListItem: addListItem,
+        loadList:loadList
+    };
 })();
 
 console.log(pokemonRepository.getAll());
