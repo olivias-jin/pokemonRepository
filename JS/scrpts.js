@@ -105,15 +105,8 @@
 //     console.log(user.name + ' type is ' + user.types);
 // });
 
-// function showModal() {
-//     let modalContainer = document.querySelector('#modal-container');
-//     modalContainer.classList.add('is-visible');
-//   }
-  
-//   document.querySelector('#show-modal').addEventListener('click', () => {
-//     showModal();
-//   });
 
+(function(){
 function showModal(title, text) {
     let modalContainer = document.querySelector('#modal-container');
   
@@ -147,3 +140,5 @@ function showModal(title, text) {
   document.querySelector('#show-modal').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
+
+})();
