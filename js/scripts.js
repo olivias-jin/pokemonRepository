@@ -184,3 +184,14 @@ var pokemonRepository = (function () {
     });
   });
   
+
+  function searchFunction(){
+    var query = document.getElementById('searchInput').ariaValueMax;
+
+    if(query.trim() !==''){
+      alert('검색어: ' + query);
+    } else{
+      alert('검색어를 입력하세요');
+    }
+    return false;
+  }
