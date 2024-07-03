@@ -55,14 +55,22 @@ text-align: center;
 .main-header {
  padding: 20px;
   background-color: black;
+  display: flex;
+  margin-left: auto;
 }
 
 .title-head{
   color: white;
   font-size: 20px;
   display: flex;
+  margin-left: auto;
 }
 
+.title-head:hover{
+  color: white;
+  text-decoration: none;
+
+}
 
 .search-form{
   margin-left: auto;
