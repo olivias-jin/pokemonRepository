@@ -1,6 +1,6 @@
 var pokemonRepository = (function () {
     var repository = [];
-    var apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=20";
+    var apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
     function add(pokemon) {
       if (
         typeof pokemon === "object" &&
