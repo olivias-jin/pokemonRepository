@@ -60,6 +60,7 @@ text-align: center;
 .title-head{
   color: white;
   font-size: 20px;
+  display: flex;
 }
 
 
