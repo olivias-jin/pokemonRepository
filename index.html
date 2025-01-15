@@ -7,7 +7,7 @@
   <title>repl.it</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+  <link rel="icon" href="image/Pokéball.png" type="image/icon">
   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
@@ -25,6 +25,8 @@
         <a class="title-head" href="index.html">
           <img src="image/Pokéball.png" alt="Main image" class="pokeball">
           Pokédex </a>
+
+
       </div>
     </nav>
   </header>
@@ -34,6 +36,13 @@
     <input type="text" id="searchInput" placeholder="Search Pokemon">
     <button onclick="searchFunction()">Search</button>
   </div>
+
+  <!-- <div id="filterPokemon">
+    <label for="filterPokemon">Pokémon Filter:</label>
+    <select name="pokemonsChoice" id="pokemonsChoice" class="form-select">
+      <option value="All" selected>All</option>
+    </select>
+  </div> -->
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -50,7 +59,7 @@
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
 
         </div>
       </div>
