@@ -1,1 +1,146 @@
-.main-header,.search-form,.title-head{margin-left:auto;display:flex}.btn,.main-header{background-color:#000}.btn:hover,.search-form button{background-color:#fc2509}.main-header{padding:20px}.title-head{color:#fff;font-size:20px}.title-head:hover{color:#fff;text-decoration:none}.search-form input[type=text]{padding:8px;border:1px solid #ccc;border-radius:4px;margin-right:5px;font-size:14px}.search-form button{padding:8px 16px;color:#030202;border:none;border-radius:4px;cursor:pointer;font-size:14px;transition:background-color .3s;box-shadow:0 4px 6px rgba(0,0,0,.1)}.search-form button:hover{background-color:#600}.btn{border:#000}.btn-secondary{background-color:gray;border-radius:4px;border:none}
+/* Search Form -- Start -- */
+.search-form {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.search-form button {
+    background-color: #fc2509
+}
+
+.search-form input[type=text] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 14px;
+    width:200px;
+}
+
+.search-form button {
+    padding: 8px 16px;
+    color: #030202;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color .3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1)
+}
+
+.search-form button:hover {
+    background-color: #600
+}
+
+/* Search Form --End --*/
+
+
+/* Title and Image -- Start --*/
+.container {
+    text-align: left;
+    width: 100%;
+}
+
+.pokeball-container {
+    /* 이미지와 텍스트를 가로로 나란히 배치 */
+    display: flex;
+    /* 왼쪽 정렬렬 */
+    justify-content: flex-start;
+    /* 세로 중앙 정렬 */
+    align-items: center;
+    text-align: left;
+}
+
+.pokeball {
+    width: 40px;
+    height: auto;
+}
+
+.title-head {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-head:hover {
+    color: #fff;
+    /* 밑줄 제거거 */
+    text-decoration: none;
+}
+
+/* Title and Image -- End --*/
+
+
+/* Header -- Start --  */
+.main-header {
+    padding: 15px;
+    background-color: black;
+}
+
+/* Header -- End -- */
+
+
+/* Scripts.js css -- Start -- */
+/* Card -- Start -- */
+.row {
+    display: flex; /* 플렉스박스 활성화 */
+    justify-content: center; /* 가로축 중앙 정렬 */
+    align-items: center; /* 세로축 중앙 정렬 */
+    margin: 0; /* 외부 여백 제거 */
+  }
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    padding: 20px; /* 내부 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    align-items: center;
+    width: 1px; /* 카드 너비 줄이기 */
+    height: auto; /* 높이는 내용에 맞추기 */
+    margin: 2px; /* 카드 간격 */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* 살짝 올라오는 효과 */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* 그림자 강조 */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.btn {
+    background-color: #030202;
+    border-color: #030202;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    ;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Card -- End -- */
+
+/* Card Details -- Start -- */
+.modal-header {
+    text-transform: capitalize;
+}
+.heightElement {
+    text-transform: capitalize;
+}
+/* Card Details -- End -- */
